@@ -1,6 +1,6 @@
 This is a Tip Calculator application for iOS submitted as the pre-assignment requirement for CodePath.
 
-Time spent: [Write the number of hours you spend here]
+Time spent: 4 hours
 
 Completed:
 
