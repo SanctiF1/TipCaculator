@@ -8,12 +8,14 @@ Completed:
 
 *[x] Required: Settings page to change the default tip percentage.
 
-*[] Optional: UI animations
+*[X] Optional: Setting theme to change background light/dark .
 
-*[] Optional: Remembering the bill amount across app restarts (if <10mins)
+*[ ] Optional: UI animations
 
-*[] Optional: Using locale-specific currency and currency thousands separators.
+*[ ] Optional: Remembering the bill amount across app restarts (if <10mins)
 
-*[] Optional: Making sure the keyboard is always visible and the bill amount is always the first responder. This way the user doesn't have to tap anywhere to use this app. Just launch the app and start typing.
+*[ ] Optional: Using locale-specific currency and currency thousands separators.
+
+*[ ] Optional: Making sure the keyboard is always visible and the bill amount is always the first responder. This way the user doesn't have to tap anywhere to use this app. Just launch the app and start typing.
 
 ![Video Walkthrough](tipcal-yelp-landscape.gif)
