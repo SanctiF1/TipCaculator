@@ -36,6 +36,7 @@ class ViewController: UIViewController {
         else{
             view.backgroundColor = UIColor.darkGrayColor()
         }
+        billField.becomeFirstResponder()
         
     }
 
@@ -46,8 +47,8 @@ class ViewController: UIViewController {
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if (segue.identifier == "openSettingSegue")
-        {
-            let des = segue.destinationViewController as! SettingViewController
+        { // Keep to ref ater. Pass value to other
+            //let des = segue.destinationViewController as! SettingViewController
             //var tipPercentage
             //= tipPercentages[tipControl.selectedSegmentIndex]
             
@@ -58,15 +59,15 @@ class ViewController: UIViewController {
 
     @IBAction func onEditingChanged(sender: AnyObject) {
         var tipPercentages = [0.18, 0.2, 0.22]
-        var tipPercentage
+        let tipPercentage
         = tipPercentages[tipControl.selectedSegmentIndex]
         
         
         //var billAmount = Double(billField.text! )!
-        var billAmount = (billField.text! as NSString).doubleValue
+        let billAmount = (billField.text! as NSString).doubleValue
 
-        var tip = billAmount * tipPercentage
-        var total = billAmount + tip
+        let tip = billAmount * tipPercentage
+        let total = billAmount + tip
         
         tipLabel.text = String(format: "$%.2f",tip)
         totalLabel.text = String(format: "$%.2f",total)
